@@ -10,23 +10,33 @@
 </head>
     <body>
         <h1>Calculadora de IMC</h1>
+        <section>
         <h2>Indíce de Massa Corporal</h2> 
             <div class="container">
-                <div class="calculadora">
-                    <div class="inserts">
-                        insira sua altura
-                            <input type="number" id="altura"></br>
-                        insira seu peso
-                            <input type="number" id="peso"></br>
-                            <button type="button" onclick="calcular()"> = </button>
-                            <input type="text" id="resp" readonly>
+            
+                        <label for="altura">Insira sua altura </label>
+                        <br>
+                        <input type="number" name="altura" id="altura">
+                        <br>
+                        <label for="peso">Insira seu peso</label>
+                        <br>
+                        <input type="number" name="peso" id="peso">
+                        <br>
+                            <form>
+                                <select name="gender" id="gender">
+                                    <option value="inc">Prefiro não Informar</option>
+                                    <option value="masc">masculino</option>
+                                    <option value="fem">feminino</option>
+                                </select>
+                            </form>
+                        <button type="button" onclick="calcular()"> Calcular </button>
+                        <br>
+                        <input type="text" id="resp" readonly>
 
-                    </div>
-
-                
-                </div>
+            
             </div>
     
         <script src="script.js"></script>
+        </section>
     </body>
 </html>
